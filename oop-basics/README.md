@@ -1,7 +1,7 @@
 # READ ME FILE for OOP
 
 ## Topics we will cover
-- 4Pillers: Including
+- 4 Pillers: Including
  . Abstraction
  . Inheritance
  . Polymorphism
@@ -27,4 +27,23 @@
  - Attributes - They are variables or constants that are attached to a object
  - Class Attributes - Are attached to the class and are specific to every instance of that class
  - Inheritance - Ability to inherit all the behavior and characteristics of parent class
+ - Super(). - Super allows me to access to parent methods. It is commonely used when you want to use init. 
  
+
+## Inheritance
+The ability to inherit all the behavior and characteristics of parent class.
+Keeps you DRY and allows you to create systems faster
+
+## Polymorphsim - Inheritance Polymorphism
+The ability to change method or characteristics in sub-class
+So a methods make_a_sound can have different behaviours in diffrent classes 
+Smaller forms of polymorphism include:
+- A method that takes in arguments to change output
+- A method that has optional arguments is a form of polymorphism 
+- A method or a function that can take any number of arguments is a form of polymorphism 
+
+## Encapsultaion
+Restricting access / making methods / attributes private 
+This allows us to make methods and attributes private. This means making something private means it can only be accessed by methods of its own calss
+This can be useful to hide sensitvie information or have behavior that should not be accessed externally.
+

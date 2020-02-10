@@ -2,12 +2,12 @@ from MonsterClass import  Monster
 
 
 class StudentMonster(Monster):
-    subjects = ['Maths']
 
-    def __init__(self, name, strength, scary_skills, uni_id, scary_subjects):
+    def __init__(self, name, strength, scary_skills, uni_id):
         super().__init__(name, strength, scary_skills)
         self.uni_id = uni_id
-        self.subjects.append(scary_subjects)
+        self.__subjects = ['Maths']
+        self.__tiny_debt = 0
 
     def party(self):
         return 'Wooooooooo'
@@ -20,7 +20,26 @@ class StudentMonster(Monster):
 
     def be_poor(self,money = 0):
         if money > 0:
-            return 'I can afford cheese today'#
+            return 'I can afford cheese today'
         else:
             return 'Guess its pasta tonight'
+
+    def setter_subjects(self,*args):
+        self.__subjects.extend(*args)
+
+    def getter_subjects(self):
+        return self.__subjects
+
+    def strength(self):
+        super.strength
+        return 3 * super.strength
+
+    def setter_debt_attribute(self, amount): #This is an interna
+        self.__tiny_debt = amount
+
+    def get_debt_value(self):
+        input('What is your logging?')
+        input('What is your password?')
+        return self.__tiny_debt
+
 

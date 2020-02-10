@@ -78,5 +78,48 @@ ringo = Reptile('ringo', 4)
 print(ringo)
 print(ringo.eat())
 
+#A parents class method will be used if the sub class doesnt overwrite the method
+#The polymorphism is the idea that the previous method can be used
+#However we come into a problem that if we do a __init__ in the subclass, then we cant pass throught the parent class __init__
+#To get around it we use super().
+
+class mammal(Animal):
+    def __init__(super,tempreature)
+        super.__init__(name, legs, eyes, claws, tasty)
+
+#We can also apply the super. as well for class methods to get the parent method first ie eat()... super.eat() will run super eat then eat
+
+#Double underscore of the name self.__ makes it private. It stops anyone accessing it. One underscore tricks people
+#Internal methods has access to encapsulated methods ie by setting it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
