@@ -3,11 +3,14 @@ from MonsterClass import  Monster
 
 class StudentMonster(Monster):
 
-    def __init__(self, name, strength, scary_skills, uni_id):
+    uni_id = 0
+
+    def __init__(self, name, strength, scary_skills):
         super().__init__(name, strength, scary_skills)
-        self.uni_id = uni_id
         self.__subjects = ['Maths']
         self.__tiny_debt = 0
+        self.uni_id = StudentMonster.uni_id
+        StudentMonster.uni_id += 1
 
     def party(self):
         return 'Wooooooooo'
