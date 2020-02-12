@@ -84,7 +84,7 @@ print(ringo.eat())
 #To get around it we use super().
 
 class mammal(Animal):
-    def __init__(super,tempreature)
+    def __init__(super,tempreature):
         super.__init__(name, legs, eyes, claws, tasty)
 
 #We can also apply the super. as well for class methods to get the parent method first ie eat()... super.eat() will run super eat then eat
